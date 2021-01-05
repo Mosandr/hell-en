@@ -1,0 +1,27 @@
+.logo { 
+
+  line-height: 1;
+  display: inline-block;
+  
+    &--dark {
+      .logo__img-white {
+        display: none;
+      }
+    }
+
+    &--white {
+      .logo__img-dark {
+        display: none;
+      }
+    }
+    
+    &__svg{
+      width: 80px;
+      height: 29px;
+
+      @media screen and (min-width: $tablet ){
+        width: 125px;
+        height: 45px;
+      }
+    }  
+}
