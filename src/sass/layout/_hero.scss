@@ -149,11 +149,14 @@
 
   &__list-item {
     position: relative;
+    width: 216px;
     display: flex;
     justify-content: start;
     align-items: center;
+    margin-left: auto;
+    margin-right: auto;
     &:not(:last-child) {
-      margin-bottom: 30px;
+      margin-bottom: 30px;      
     }
 
     @media screen and(min-width: $tablet) {
@@ -163,11 +166,11 @@
     }
 
     @media screen and(min-width: 1280px) {
-      width: 425px;      
+      width: 425px;
     }
 
-     @media screen and(min-width: 1344px) {
-      width: 438px;      
+    @media screen and(min-width: 1344px) {
+      width: 438px;
     }
   }
 
@@ -195,7 +198,7 @@
       left: 25px;
       width: 45px;
       height: 47px;
-    }    
+    }
   }
 
   &__list-text {
@@ -214,14 +217,14 @@
       position: absolute;
       left: 80px;
       width: 330px;
-      margin-left:0px;
+      margin-left: 0px;
       font-size: 20px;
       line-height: 1.65;
     }
 
     @media screen and(min-width: 1344px) {
       left: 85px;
-      width: 366px;      
+      width: 366px;
     }
   }
 }
