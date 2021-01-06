@@ -9,11 +9,43 @@
       <span class="hero__subtitle--accent">+25 баллов</span>
     </p>
     <a class="button hero__call-btn link" href="">хочу на бесплатное занятие</a>
-    <img
-      class="hero__image"
-      src="./images/hero-m.jpg"
-      alt="Преподаватель за столом с учениками"
-    />
+    <picture>
+      <source
+        media="(min-width: 1280px)"
+        srcset="./images/hero-d.webp 1x, ./images/hero-d@2x.webp 2x"
+        type="image/webp"
+      />
+      <source
+        media="(min-width: 1280px)"
+        srcset="./images/hero-d.png 1x, ./images/hero-d@2x.png 2x"
+        type="image/png"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="./images/hero-t.webp 1x, ./images/hero-t@2x.webp 2x"
+        type="image/webp"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="./images/hero-t.png 1x, ./images/hero-t@2x.png 2x"
+        type="image/png"
+      />
+      <source
+        media="(min-width: 320px)"
+        srcset="./images/hero-m.webp 1x, ./images/hero-m@2x.webp 2x"
+        type="image/webp"
+      />
+      <source
+        media="(min-width: 320px)"
+        srcset="./images/hero-m.png 1x, ./images/hero-m@2x.png 2x"
+        type="image/png"
+      />
+      <img
+        class="hero__image"
+        src="./images/hero-m.png"
+        alt="Преподаватель за столом с учениками"
+      />
+    </picture>
     <ul class="hero__list list">
       <li class="hero__list-item">
         <svg class="hero__list-icon">
