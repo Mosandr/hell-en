@@ -12,6 +12,16 @@
 
   border: 2px solid $accent-color;
 
+  transition-property: background, color;
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-function;
+
+  &:hover,
+  &:focus {
+    background: transparent;
+    color: $accent-color;
+  }
+
   @media screen and (min-width: 1280px) {
     padding: 25px 20px;
     min-width: 336px;
@@ -23,5 +33,15 @@
   &--transparent {
     background: transparent;
     color: $accent-color;
+
+    transition-property: background, color;
+    transition-duration: $transition-duration;
+    transition-timing-function: $transition-function;
+
+    &:hover,
+    &:focus {
+      background: $accent-color;
+      color: $light-bg;
+    }
   }
 }

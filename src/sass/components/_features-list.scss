@@ -26,7 +26,7 @@
     padding-right: 80px;
 
     display: flex;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
   }
 
   @media screen and (min-width: 1280px) {
@@ -34,7 +34,7 @@
     font-size: 20px;
     line-height: 1.4;
     padding-top: 70px;
-    padding-bottom: 70px;    
+    padding-bottom: 70px;
   }
 
   @media screen and (min-width: 1344px) {
@@ -44,6 +44,8 @@
   }
 
   &__item {
+    max-width: 300px;
+
     &:not(:last-child) {
       margin-bottom: 10px;
     }
@@ -53,6 +55,10 @@
       color: $accent-color;
 
       margin-bottom: 5px;
+
+      @media screen and (min-width: 1280px) {
+         margin-bottom: 10px;
+      }
     }
 
     &:nth-child(-n + 9):before {
@@ -66,7 +72,8 @@
     }
 
     @media screen and (min-width: $tablet) {
-      flex-basis: calc((100% - 40px) / 2);     
+      max-width: 100%;
+      flex-basis: calc((100% - 40px) / 2);
       margin-left: 10px;
       margin-right: 10px;
 
@@ -76,8 +83,6 @@
       &:not(:nth-last-child(-n + 2)) {
         margin-bottom: 10px;
       }
-
-      
     }
 
     @media screen and (min-width: 1280px) {
