@@ -3,22 +3,22 @@
  * Все паршалы подключаются сюда.
  */
 // utils
-@import "./utils/normalize";
-@import "./utils/fonts";
-@import "./utils/variables";
+@import './utils/normalize';
+@import './utils/fonts';
+@import './utils/variables';
 
 //base
-@import "./base/common";
-@import "./base/container";
+@import './base/common';
+@import './base/container';
 
 // components
-@import "./components/logo";
-@import "./components/button";
-@import "./components/features-list";
+@import './components/logo';
+@import './components/button';
+@import './components/features-list';
 
 //layout
-@import "./layout/header";
-@import "./layout/hero";
-@import "./layout/problems";
-@import "./layout/approaches";
-
+@import './layout/header';
+@import './layout/hero';
+@import './layout/problems';
+@import './layout/approaches';
+@import './layout/program';
