@@ -1,62 +1,115 @@
-.programm {
-  background: $title-color;
+.program {
   font-style: normal;
   padding-top: 50px;
-  padding-bottom: 50px;
+  background: $title-color;
+}
+
+.program__bg-wrapper {
+  margin: auto;
+  padding-bottom: 537px;
+  background: url('../images/program_bg_m.png');
+  background-repeat: no-repeat;
+  background-position: left 200px top 1400px;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url('../images/program_bg_m@2x.png');
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    background-position: 220px 1400px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 392px;
+    width: $tablet;
+    background: url('../images/program_bg_t.png');
+    background-position: right 0 top 750px;
+    background-repeat: no-repeat;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/program_bg_t@2x.png');
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-right: auto;
+    padding-bottom: 363px;
+    width: auto;
+    background: url('../images/program_bg_d.png');
+    background-size: 40% auto;
+    background-position: left top 570px;
+    background-repeat: no-repeat;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/program_bg_d@2x.png');
+    }
+  }
+
+  @media screen and (min-width: 1680px) {
+    width: 1680px;
+    background-size: 672px;
+    background-repeat: no-repeat;
+    background-position: right 1010px top 570px;
+  }
 }
 
 @media screen and (min-width: $tablet) {
-  .programm {
+  .program {
     padding-top: 60px;
-    padding-bottom: 189px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .programm {
+  .program {
     position: relative;
     padding-top: 120px;
-    padding-bottom: 363px;
   }
 }
 // -------------------------------------------
 @media screen and (max-width: $tablet) {
-  .programm__list {
+  .program__list {
     margin-left: 100px;
     position: relative;
   }
 }
 
 @media screen and (min-width: $tablet) and (max-width: 1279px) {
-  .programm__list {
+  .program__list {
     position: relative;
     margin-left: 120px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .programm__list {
+  .program__list {
     display: flex;
     margin-left: 0px;
   }
 }
 
 @media screen and (min-width: $tablet) and (max-width: 1279px) {
-  .programm-skills__list {
+  .program-skills__list {
     display: flex;
   }
 }
 @media screen and (min-width: $tablet) and (max-width: 1279px) {
-  .programm-skills__item:first-child {
+  .program-skills__item:first-child {
     width: 176px;
     margin-right: 50px;
   }
 
-  .programm-skills__item:nth-child(2n) {
+  .program-skills__item:nth-child(2n) {
     width: 156px;
     margin-right: 50px;
   }
 }
 
-.programm__head {
+.program__head {
   font-weight: 800;
   font-size: 20px;
   line-height: 1.333;
@@ -68,25 +121,25 @@
 }
 
 @media screen and (min-width: $tablet) {
-  .programm__head {
+  .program__head {
     font-size: 26px;
     line-height: 1.308;
     text-align: left;
   }
 }
 @media screen and (min-width: 1280px) {
-  .programm__head {
+  .program__head {
     font-size: 46px;
     line-height: 1.304;
     margin-bottom: 100px;
   }
 }
 @media screen and (max-width: 1279px) {
-  .programm__term {
+  .program__term {
     position: relative;
   }
 }
-.programm__term {
+.program__term {
   position: relative;
   display: inline-block;
   font-weight: 700;
@@ -98,13 +151,13 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .programm__term {
+  .program__term {
     font-size: 30px;
     line-height: 0.93;
   }
 }
 @media screen and (max-width: 1279px) {
-  .programm__term::before {
+  .program__term::before {
     content: '';
     position: absolute;
     top: 25%;
@@ -120,7 +173,7 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .programm__term::before {
+  .program__term::before {
     content: '';
     position: absolute;
     display: block;
@@ -133,22 +186,22 @@
   }
 }
 
-.programm__term {
+.program__term {
   margin-top: 0px;
   margin-bottom: 0px;
 }
 @media screen and (min-width: 1280px) {
-  .programm__term {
+  .program__term {
     margin-bottom: 25px;
   }
 }
 @media screen and (min-width: $tablet) and (max-width: 1279px) {
-  .programm__term::before {
+  .program__term::before {
     margin-right: 50px;
   }
 }
 
-.programm-skills__name {
+.program-skills__name {
   margin-bottom: 11px;
   margin-top: 11px;
   font-weight: 700;
@@ -160,14 +213,14 @@
   align-items: center;
 }
 @media screen and (min-width: 1280px) {
-  .programm-skills__name {
+  .program-skills__name {
     font-weight: bold;
     font-size: 20px;
     line-height: 1.65;
   }
 }
 
-.programm-skills__name::before {
+.program-skills__name::before {
   content: '';
   display: block;
   width: 12px;
@@ -176,7 +229,7 @@
   margin-right: 5px;
 }
 
-.programm-skills__description {
+.program-skills__description {
   margin-top: 0px;
   margin-bottom: 0px;
   font-weight: 500;
@@ -187,33 +240,33 @@
   opacity: 0.5;
 }
 @media screen and (min-width: 1280px) {
-  .programm-skills__description {
+  .program-skills__description {
     font-size: 18px;
     line-height: 1.556;
   }
 }
 @media screen and (max-width: 767px) {
-  .programm-skills__item {
+  .program-skills__item {
     margin-bottom: 8px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .programm-skills__item:not(:last-child) {
+  .program-skills__item:not(:last-child) {
     margin-bottom: 25px;
   }
 }
 @media screen and (max-width: 767px) {
-  .programm__item:not(:last-child) {
+  .program__item:not(:last-child) {
     margin-bottom: 40px;
   }
 }
 @media screen and (min-width: $tablet) and (max-width: 1279px) {
-  .programm__item:not(:last-child) {
+  .program__item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
 @media screen and (max-width: 1279px) {
-  .programm__item:first-child::before {
+  .program__item:first-child::before {
     content: '';
     position: absolute;
     display: inline-block;
@@ -226,19 +279,19 @@
   }
 }
 @media screen and (min-width: $tablet) and (max-width: 1279px) {
-  .programm__item:first-child::before {
+  .program__item:first-child::before {
     margin-right: 56px;
     height: 705px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .programm__item:not(:last-child) {
+  .program__item:not(:last-child) {
     margin-right: 30px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .programm__item {
+  .program__item {
     padding-top: 60px;
     position: relative;
     width: 240px;
@@ -246,7 +299,7 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .programm__line {
+  .program__line {
     position: absolute;
     display: block;
     top: 277px;
@@ -255,7 +308,7 @@
     background: $title-dark-theme-color;
   }
 }
-.programm__tests {
+.program__tests {
   color: $title-color;
   margin-bottom: 10px;
 }
