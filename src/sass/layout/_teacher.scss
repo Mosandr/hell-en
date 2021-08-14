@@ -1,0 +1,150 @@
+.teacher {
+  padding-top: 270px;
+  padding-bottom: 50px;
+
+  @media screen and (min-width: 350px) {
+    padding-top: 220px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 302px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 302px;
+  }
+}
+
+.teacher__wrapper {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+}
+
+.teacher__title {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.304;
+  letter-spacing: 0.03em;
+  color: $title-color;
+
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 30px;
+    font-size: 26px;
+    line-height: 1.307;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 46px;
+    line-height: 1.304;
+  }
+}
+
+.teacher__name {
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.233;
+  letter-spacing: 0.08em;
+  padding-bottom: 10px;
+  color: $title-color;
+  border-bottom: 1px solid #b9b9b9;
+
+  @media screen and (min-width: $tablet) {
+    margin-top: 0px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 15px;
+    font-size: 30px;
+    line-height: 1.233;
+  }
+}
+.teacher__credentials {
+  @media screen and (min-width: $tablet) {
+    margin-left: 40px;
+    width: 402px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-left: 30px;
+    width: 642px;
+  }
+}
+.teacher__credentials-list {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 20px;
+    height: 2px;
+    background-color: $accent-color;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
+}
+.teacher__list-item {
+  position: relative;
+  padding-left: 26px;
+
+  &::before {
+    content: url(../images/svg/mark.svg);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.teacher__item-description {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.214;
+  letter-spacing: 0.06em;
+  color: $title-color;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+.teacher__description {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.666;
+  color: $subtitle-color;
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 28px;
+    font-size: 18px;
+    line-height: 1.555;
+  }
+}
+.teacher__education-link {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.666;
+  text-decoration-line: underline;
+  color: $accent-color;
+  @media screen and (min-width: 1200px) {
+    font-size: 18px;
+    line-height: 1.555;
+  }
+}
