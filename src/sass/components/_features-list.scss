@@ -1,8 +1,8 @@
 .features-list {
   width: calc(100% - 40px);
   padding: 20px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 0;
+  margin-right: 0;
 
   counter-reset: item;
   font-weight: 700;
@@ -35,12 +35,14 @@
     line-height: 1.4;
     padding-top: 70px;
     padding-bottom: 70px;
+    padding-left: 64px;
+    padding-right: 62px;
   }
 
   @media screen and (min-width: 1344px) {
     width: 1314px;
-    padding-left: 94px;
-    padding-right: 92px;
+    padding-left: 64px;
+    padding-right: 62px;
   }
 
   &__item {
