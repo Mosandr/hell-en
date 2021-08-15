@@ -1,0 +1,104 @@
+.warranties__title {
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 1.307;
+  color: $title-color;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 50px;
+
+    font-size: 46px;
+    line-height: 1.304;
+  }
+}
+
+.accent-text {
+  color: $accent-color;
+}
+
+.warranties__list {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: $alternative-bg;
+
+  @media screen and (min-width: $tablet) {
+    &.container {
+      width: 688px;
+      padding-right: 50px;
+      padding-left: 79px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    &.container {
+      width: 1280px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      padding-right: 112px;
+      padding-left: 112px;
+    }
+  }
+  @media screen and (min-width: 1344px) {
+    &.container {
+      width: 1314px;
+    }
+  }
+}
+
+.warranties__list-item {
+  position: relative;
+  padding-left: 35px;
+
+  @media screen and (min-width: $tablet) {
+    padding-left: 48px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-left: 52px;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 23px;
+  }
+
+  &::before {
+    content: url('../images/svg/fire.svg');
+    width: 15px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    @media screen and (min-width: 1280px) {
+      width: 22px;
+      height: 30px;
+    }
+  }
+
+  &:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: calc(100% - 7px);
+    border-left: dashed 1px $subtitle-color;
+    top: 23px;
+    left: 7px;
+  }
+}
+
+.warranties__item-description {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.667;
+  color: #3d3d3d;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+}
