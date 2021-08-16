@@ -1,0 +1,21 @@
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 1000;
+  background-color: transparent;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all $transition-duration $transition-function;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.up-btn__svg {
+  fill: $accent-color;
+}

@@ -7,6 +7,12 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/form-m@2x.png);
+  }
+
   @media screen and (min-width: 768px) {
     background: $title-color;
     background-image: url(../images/form-t.png);
@@ -14,12 +20,24 @@
     background-size: cover;
     padding-top: 100px;
     padding-bottom: 60px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/form-t@2x.png);
+    }
   }
   @media screen and (min-width: 1280px) {
     background: $title-color;
     background-image: url(../images/form-d.png);
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/form-d@2x.png);
+    }
   }
 }
 

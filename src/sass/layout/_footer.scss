@@ -56,6 +56,16 @@
     line-height: 1.233;
   }
 }
+
+.page-footer__link--center {
+  transform: scale(1);
+  transition: transform $transition-duration $transition-function;
+
+  &:focus,
+  &:hover {
+    transform: scale(1.2);
+  }
+}
 .page__footer--iteam {
   @media screen and (min-width: 1280px) {
     margin-right: 290px;
@@ -115,9 +125,18 @@
   height: 20px;
   fill: $accent-color;
   margin-right: 10px;
+  transform: scale(1);
+
+  transition: transform $transition-duration $transition-function;
+
   @media screen and (min-width: 768px) {
     height: 30px;
     width: 30px;
+  }
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
   }
 }
 
