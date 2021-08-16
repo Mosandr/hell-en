@@ -6,6 +6,8 @@
 @import './utils/normalize';
 @import './utils/fonts';
 @import './utils/variables';
+@import './utils/mixins';
+@import './utils/slick';
 
 //base
 @import './base/common';
@@ -25,3 +27,6 @@
 @import './layout/features';
 @import './layout/teacher';
 @import './layout/warranties';
+@import './layout/testimonials';
+@import './layout/form';
+@import './layout/footer';
