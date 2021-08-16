@@ -5,7 +5,7 @@
 ### Description
 
 Students project on course HTML, CSS (GoIT School)
-[Link on design](https://youtu.be/p2tFnxcymwk)
+[Link on design](<https://www.figma.com/file/1hpgPzVbeq2RhFQAONBeTr/%D0%92%D0%9D%D0%9E-(Copy)?node-id=0%3A1>)
 
 - Adaptive markup (mobile first approach, tablet, desktop)
 
