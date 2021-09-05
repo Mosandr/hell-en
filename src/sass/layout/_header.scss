@@ -73,10 +73,14 @@
   margin-top: 6px;
   background: transparent;
   border: none;
-  align-self: baseline;
+  align-self: flex-start;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 14px;    
+  }
 
   @media screen and (min-width: 1280px) {
-    display: none;
+    display: none;    
   }
 }
 
